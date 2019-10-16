@@ -1,0 +1,211 @@
+CSS
+/*
+Color Pallettes
+Lettering: #F2F6F5
+link hover: #93B5B3
+Icons: #719192
+Others:#c8dad3, #63707E
+/*___________________________*/
+/* BASIC SETUP*/
+/*___________________________*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  background-color: #c8dad3;
+  color: #F2F6F5;
+  font-family: "Lato" "Arial" sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  text-rendering: optimizeLegibility;
+}
+/*___________________________*/
+/* REUSABLE COMPONENTS       */
+/*___________________________*/
+.row {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+section {
+  padding: 80px 0;
+  padding-top: 40px;
+}
+.box {
+  padding: 0.001%;
+}
+/*-------------HEADINGS-------------*/
+h1,
+h2 {
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: center;
+}
+h1 {
+  margin: 0;
+  margin-bottom: 40px;
+  color: #f2f6f5;
+  font-size: 200%;
+  word-spacing: 4px;
+  letter-spacing: 1px;
+}
+h2 {
+  font-size: 180%;
+  word-spacing: 1px;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+  }
+  /*-------------ICONS-------------*/
+  .icon-big {
+    font-size: 175%;
+    display: block;
+    color: #3d4f4f;
+    margin-bottom: 5px;
+    text-align: center;
+    list-style: none;
+  }
+/*-------------Paragraphs-------------*/
+/*___________________________*/
+/* HEADER                    */
+/*___________________________*/
+header {
+  background-image:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(img/grey-brick-background.jpeg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  background-attachment: fixed;
+}
+.background-text-box {
+  position: absolute;
+  width: 1140px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.background-long-copy {
+  line-height: 145%;
+  width: 70%;
+  margin-left: 15%;
+  margin-right: 15%;
+  text-align: center;
+}
+.main-nav {
+  float: right;
+  list-style: none;
+  margin-top: 20px;
+}
+.main-nav li {
+  display: inline-block;
+  margin-left: 40px;
+}
+.main-nav li a:link,
+.main-nav li a:visited {
+  padding: 8px 0;
+  color: #f2f6f5;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 90%;
+  border-radius: 2px solid transparent;
+  transition: border-bottom 0.2s;
+}
+.main-nav li a:hover,
+.main-nav li a:active {
+  border-bottom: 2px solid #93b5b3;
+}
+/*___________________________*/
+/* Section Projects           */
+/*___________________________*/
+.section-projects {
+  background-color: #d2e1db;
+}
+.projects {
+  display: block;
+  float: left;
+  width: 100%;
+    margin: 0 20px;
+}
+.section-projects li {
+  list-style: none;
+  color: #c7d4d4;
+}
+/*___________________________*/
+/* Section Forms           */
+/*___________________________*/
+.contact-form {
+  width: 60%;
+  margin: 0 auto;
+  font-size: 115%;
+}
+  input[type=text],
+  input[type=email],
+  textarea {
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #ccc;s
+  }
+  /*___________________________*/
+  /* Footer                    */
+  /*___________________________*/
+  footer {
+    background-color: #333;
+    padding: 20px;
+    font-size: 80%;
+  }
+  .footer-nav {
+    list-style: none;
+    float: left;
+  }
+  .social-links {
+    list-style: none;
+    float: right;
+  }
+  .footer-nav li,
+  .social-links li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  .footer-nav li:last-child,
+  .social-links li:last-child{
+  margin: 0;
+  }
+  .footer-nav li a:link,
+  .footer-nav li a:visited,
+  .social-links li a:link,
+  .social-links li a:visited {
+  text-decoration: none;
+  border: 0;
+  color: #888;
+  transition: color 0.2s;
+  }
+  .footer-nav li a:hover,
+  .footer-nav li a:active,
+  .social-links li a:hover,
+  .social-links li a:active {
+    color: #ddd;
+  }
+  .social-links li a:link,
+  .socail-links li a:visited {
+    font-size: 170%;
+  }
+  .ion-logo-facebook,
+  .ion-logo-linkedin,
+  .ion-logo-github {
+    transition: color 0.2s;
+  }
+  .ion-logo-facebook:hover {
+    color: #3b5998;
+  }
+  .ion-logo-linkedin:hover {
+    color: #0e76a8;
+  }
+  .ion-logo-github:hover {
+    color: #db4437;
+  }
+  footer p {
+    color: #888;
+    text-align: center;
+    font-size: 90%;
+    margin-top: 15px
+  }
